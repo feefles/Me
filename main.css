@@ -1,0 +1,53 @@
+    a:link {
+    color: #084080;
+    text-decoration: none;
+    }
+    
+    a:link:hover {
+    color: #052850;
+    text-decoration: underline;
+    }
+    
+    a:link:visited {
+    color: #021020;
+    }
+    
+    #navigation {
+    position:absolute;
+    left:0;
+    top:50px;
+    width:100;
+    background: rgba(255, 255, 255, 0.8);
+    border: solid 1px #CCC;
+    }
+    
+    #navigation a {
+    display:block;
+    padding: 0.5em 1em;
+    color:#333;
+    }
+    #navigation a:hover {
+    background: #AAA;
+    color: #FFF;
+    text-decoration: none;
+    }
+    
+    #navigation .projects:hover {
+    background:#A6A;
+    }
+    #navigation .research:hover {
+    background:#478;
+    }
+    
+    #content {
+        position:absolute;
+        display:block;
+        left:150px;
+        top:50px;
+    }
+    html, body {
+    height: 100%;
+    line-height: 1;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    }
+    
