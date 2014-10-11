@@ -1,53 +1,113 @@
-    a:link {
-    color: #084080;
-    text-decoration: none;
-    }
-    
-    a:link:hover {
-    color: #052850;
-    text-decoration: underline;
-    }
-    
-    a:link:visited {
-    color: #021020;
-    }
-    
-    #navigation {
-    position:absolute;
-    left:0;
-    top:50px;
-    width:100;
-    background: rgba(255, 255, 255, 0.8);
-    border: solid 1px #CCC;
-    }
-    
-    #navigation a {
-    display:block;
-    padding: 0.5em 1em;
-    color:#333;
-    }
-    #navigation a:hover {
-    background: #AAA;
-    color: #FFF;
-    text-decoration: none;
-    }
-    
-    #navigation .projects:hover {
-    background:#A6A;
-    }
-    #navigation .research:hover {
-    background:#478;
-    }
-    
-    #content {
-        position:absolute;
-        display:block;
-        left:150px;
-        top:50px;
-    }
-    html, body {
-    height: 100%;
-    line-height: 1;
-    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-    }
-    
+* { 
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#navigation {
+    width: 100%;
+    background-color: #FF941C;
+    height: 50px;
+    float:left;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#navigation i{
+    font-size:50px;
+    padding-left: 8px;
+    padding-right: 8px;
+    display:inline-block;
+    color: #000;
+}
+img {
+    /*width: 30%;*/
+    /*height: auto;*/
+    height: 400px;
+    position:relative;
+    float:left;
+    margin-left: 10%;
+}
+
+a {
+    color: #000;
+    font-style: none;
+}
+
+ul {
+    list-style-type: none;
+}
+li {
+    padding-left: 20px;
+}
+
+.fa:hover {
+    background-color:#FFC787;
+    cursor: pointer;
+}
+.textBox {
+    padding: 10px;
+    margin:auto;
+}
+/*-------------------------*/
+#aboutText {
+    background-color: #5F26C2;
+    height: 380px;
+    width: 40%;
+    margin-left: 10%;
+    display:inline-block;
+    color: #fff;
+    margin-bottom: 10%;
+    padding: 10px;
+}
+/*-------------------------*/
+
+#educationText {
+    margin-left: 10%;
+    background-color: #09C386;
+    height: 600px;
+    width: 40%;
+    /*font*/-color: #000;
+    position:relative;
+    float:left;
+    margin-bottom: 10%;
+    color: #fff;
+}
+#educationText li{
+    font-size: 14px;
+}
+
+#skillsText {
+    background-color: #AB0CC1;
+    height: 370px;
+    width: 30%;
+    margin-bottom: 30px;
+    margin-left: 10%;
+    position:relative;
+    float:left;
+    color: #fff;
+
+}
+
+#extraCurriculars {
+    background-color: #5F26C2;
+    height: 180px;
+    width: 30%;
+    margin-left: 10%;
+    position:relative;
+    float:left;
+    color: #fff;
+    font-size: 13px;
+}
+
+/*-------------------------*/
+#projects {
+    text-align:center;
+    margin: 0 auto;
+}
+#projects img {
+    margin-left: 25%;
+    width: 50%;
+    height: auto;
+    margin-bottom: 10%;
+}
