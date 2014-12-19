@@ -1,4 +1,6 @@
 $(function() {
+	$('#content').html($('#aboutDiv').html());
+
 	$('#about').click(function() {
 		$('#content').html($('#aboutDiv').html());
 	})
