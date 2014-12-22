@@ -1,0 +1,151 @@
+$base-color: #189A91;
+$second-color: #FA8727;
+$third-color: #931CA4;
+$fourth-color: #486262;
+
+$fa-width: 50px;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+
+#navigation {
+    width: 100%;
+    background-color: $base-color;
+    height: 100px;
+    float:left;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    h1 {
+        padding-top: 20px;
+        margin: 2px;
+        float:left;
+    }
+    i { 
+        float:left;
+        font-size:50px;
+        padding-top: 20px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        display:inline-block;
+        color: white;
+        position:relative;
+        span {
+            display:none;
+            font-size:14px;
+            position:absolute;
+            left:15px;
+            margin-top:10px
+        }
+        &.selected {
+            border-bottom: 2px solid white;
+        }
+        &:hover {
+            border-bottom: 1px solid white;
+            cursor: pointer;
+        }
+    }
+}
+
+img {
+    height: 400px;
+    position:relative;
+    float:left;
+    margin-left: 10%;
+}
+
+a {
+    color: grey;
+    text-decoration:none;
+}
+#projects p {
+    display:inline-block;
+    width: 50%;
+}
+
+ul {
+    list-style-type: none;
+}
+li {
+    padding-left: 20px;
+}
+
+
+.textBox {
+    padding: 10px;
+    margin:auto;
+}
+/*-------------------------*/
+h2 {
+        color: black;
+        text-align: center;
+    }
+
+#aboutText {
+
+    background-color: $third-color;
+    height: 380px;
+    width: 40%;
+    margin-left: 10%;
+    display:inline-block;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 10%;
+    padding: 10px;
+}
+/*-------------------------*/
+
+#educationText {
+    margin-left: 10%;
+    background-color: $third-color;
+    height: 600px;
+    width: 40%;
+    font-color: #000;
+    position:relative;
+    float:left;
+    margin-bottom: 10%;
+    color: #fff;
+}
+#educationText li{
+    font-size: 14px;
+}
+
+#skillsText {
+    background-color: $second-color;
+    height: 370px;
+    width: 30%;
+    margin-bottom: 30px;
+    margin-left: 10%;
+    position:relative;
+    float:left;
+    color: #fff;
+
+}
+
+#extraCurriculars {
+    background-color: #5F26C2;
+    height: 180px;
+    width: 30%;
+    margin-left: 10%;
+    position:relative;
+    float:left;
+    color: #fff;
+    font-size: 13px;
+}
+
+/*-------------------------*/
+#projects {
+    text-align:center;
+    margin: 0 auto;
+    img {
+        margin-left: 25%;
+        width: 50%;
+        height: auto;
+    }
+}
