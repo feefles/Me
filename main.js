@@ -1,15 +1,25 @@
 $(function() {
-    $('#content').html($('#aboutDiv').html());
+    // $('#content').html($('#aboutDiv').html());
 
     $('#about').click(function() {
-        $('#content').fadeOut(0).html($('#aboutDiv').html()).fadeIn(200);
+    	if ($('#aboutDiv').css('display') == "none") {
+    		$('#content').children().fadeOut();
+    		$('#aboutDiv').fadeIn();
+    	}
+   
+        // $('#content').fadeOut(0).html($('#aboutDiv').html()).fadeIn(200);
     })
     $('#education').click(function() {
-        $('#content').html($('#educationDiv').html());
+    	// if ($('#educationDiv').css('display') == "none") {
+	    	$('#content').children().fadeOut();
+	    	$('#educationDiv').fadeIn();
+	    // }
     })
     $('#projects').click(function() {
-        $('#content').html($('#projectDiv').html());
-    })
+		if ($('#projectDiv').css('display') == "none") {
+	    	$('#content').children().fadeOut();
+	    	$('#projectDiv').fadeIn();
+	    }    })
 
     $('#navigation i').click(function() {
     	$('#navigation i').removeClass('selected');

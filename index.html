@@ -14,118 +14,146 @@
     <div id="navigation">
         <h1>>> Evelyn Fifi Yeung  | </h1>
         <i class="fa fa-smile-o" id="about">
-            <span>About</span>
-        </i>
+<span>About</span>
+</i>
         <i class="fa fa-pencil" id="education">
-            <span style="left: 0">Education</span>
-        </i>
+<span style="left: 0">Education</span>
+</i>
         <i class="fa fa-cogs" id="projects">
-            <span>Projects</span>
-        </i>
-        <a href = "http://www.github.com/feefles">
+<span>Projects</span>
+</i>
+        <a href="http://www.github.com/feefles">
             <i class="fa fa-github-alt" font-color="#fff">
-            <span>Github</span>
-        </i>
+<span>Github</span>
+</i>
         </a>
 
     </div>
-    <div id="content"></div>
 
-    <script type='text/html' id="aboutDiv">
-        <h2>About Me</h3>
-        <img src="./images/me.jpg"></img>
-        <div id="aboutText" class="textBox">
-        <p>
-        Hi, my name is Evelyn "Fifi" Yeung. I am a junior studying Computer Science at the University of Pennsylvania. I am also pursuing a minor in Mechanical Engineering, and a Masters in Robotics.
-        <p> I am a TA for <a href="cis.upenn.edu/~cis121">CIS 160 (Mathematical Foundations of CS)</a>,  a research assistant in <a href="http://kodlab.seas.upenn.edu"> KodLab </a>,  a robotics lab specializing in legged robots, and an active member of the <a href="stwing.upenn.edu">Science and Technology Wing</a>. 
+
+    <div id="content">
+        <div id="aboutDiv">
+            <h2>About Me</h2>
+            <img src="./images/me.jpg"></img>
+            <div id="aboutText" class="textBox">
+                <p>
+                    Hi, my name is Evelyn "Fifi" Yeung. I am a junior studying Computer Science at the University of Pennsylvania. I am also pursuing a minor in Mechanical Engineering, and a Masters in Robotics.
+                    <p> I am a TA for <a href="cis.upenn.edu/~cis121">CIS 160 (Mathematical Foundations of CS)</a>, a research assistant in <a href="http://kodlab.seas.upenn.edu"> KodLab </a>, a robotics lab specializing in legged robots, and an active member of the <a href="stwing.upenn.edu">Science and Technology Wing</a>.
+
+            </div>
+        </div>
+        <!-- -------------------------------------- -->
+
+        <div id="educationDiv">
+        <h1>University of Pennsylvania</h1>
+        <h2 style="text-align:left; left: 20%">BSE Candidate, Computer Science 2016</h2>
+        <h2 style="text-align:left; left: 40%">MSE Candidate, Robotics 2016</h2>
+            <div id="classesBar">
+                <div id="classesBarClasses">
+                    <span id="purple"><b>CIS 380:</b> <br>Operating Systems</span>
+                    <span id="teal"><b>CIS 542: </b> <br>Embedded Systems Programming</span>
+                    <span id="grey"><b>CIS 371:</b> <br>Computer Organization and Design</span>
+                    <span id="purple"><b>CIS 240:</b> <br>Introduction to Computer Systems</span>
+                    <span id="teal"><b>CIS 121: </b> <br>Data Structures and Algorithms</span>
+                    <span id="grey"><b>CIS 191: </b><br>Linux/UNIX skills</span>
+                    <span id="purple"><b>CIS 197: </b><br>Javascript</span>
+                    <span id="teal"><b>MEAM 210:</b><br>Statics and Strength of Materials</span>
+                    <span id="grey"><b>MEAM 211:</b><br>Dynamics</span>
+                    <span id="purple"><b>MEAM 245:</b><br>Introduction to Flight</span>
+                </div>
+
+            </div>
+            <div id="skillsBar">
+                <img src="./images/python.png"></img>
+                <img src="./images/Java_Logo.svg"></img>
+                <img src="./images/javascript.png"></img>
+                <img src="./images/c_logo.png">
+                <img src="./images/git_logo.png">
+                <img src="./images/matlab_logo.png">
+            </div>
+
+            <!--  <div id="skillsText" class="textBox">
+<h2> Skills </h2>
+<ul>
+    <li>Python
+        <ul>
+            <li>Flask</li>
+            <li>Numpy/MatPlotLib</li>
+        </ul>
+    </li>
+    <li>Java</li>
+    <li>Javascript
+        <ul>
+            <li>jQuery </li>
+            <li>Backbone</li>
+            <li>NodeJS</li>
+        </ul>
+    </li>
+    <li>C</li>
+    <li>Git </li>
+    <li>Matlab</li>
+</ul>
+</div>
+<div id="extraCurriculars" class="textBox">
+<h2> Extra Curriculuars</h2>
+<ul>
+    <li>CIS 160 Teaching Assistant: Weekly recitations for section of 22, office hours, and grading</li>
+    <br>
+    <li>Research assistant in <a href="www.kodlab.seas.upenn.edu">Kodlab</a>
+    </li>
+    <br>
+    <li>Science and Technology Wing <a href="www.stwing.upenn.edu">(Stwing)</a> 2012-present</li>
+    <br>
+    <li>Kings Court English House Special Events Manager</li>
+</ul>
+</div> -->
 
         </div>
-    </script>
+        <!-- -------------------------------------- -->
+        <div id="projectDiv">
+            <h3>projects</h3>
+            <div id="projects">
+                <a href="http://trackhackfifi.herokuapp.com" target="_blank">
+                    <img src="./images/trackhack.png"></img>
+                </a>
+                <p>
+                    <b>Trackhack:</b> built at HackMIT 2014. In progress. Multi Source playlist, allows you to paste urls from Spotify, Youtube, and Soundcloud, so you can keep it all in one place. Will integrate Facebook and have social access.
+                    <br> Stack Overview: Mongo database, database api built with Flask (pymongo), Pure javascript on top. Investigating using other frameworks.
+                    <br> Won the MongoDB prize.</p>
+                <a href="http://openn.me" target="_blank">
+                    <img src="./images/openn.png"></img>
+                </a>
+                <p>
+                    <b>Openn:</b> built at PennApps f2014. Released, in active development. Consists of Chrome extension + webapp. Extension makes it easy to scrape grades from Penn Registrar and send to our database. Once grades are sent in, you can view grade distributions for professors and classes.
+                    <br> features we hope to build: performance predictions based on student profiles (all students are anonymous), smart duplication detection (we assume it is highly unlikely that students will take the exact same classes, and have the same performance in them. We hope to reduce the amount of students that enter their data twice under the same username)
+                    <br>
+                    <br>
+                </p>
+                <a href="http://penncourseplus.com" target="_blank">
+                    <img src="./images/pcp.png"></img>
+                </a>
+                <p>
+                    <b>PennCoursePlus: </b>Built at PennApps s2014. Released, about 300 users (and growing). Chrome extension that puts PennCourseReview data into PennInTouch. (see screenshot) Received great reviews from other students.
+                    <br>
+                    <br>
+                </p>
 
-    <script type='text/html' id="educationDiv">
-        <h3>education</h3>
-        <div id="educationText" class="textBox">
-            <h2>BSE Candidate in Computer Science, 2016</h4>
-            <h3> Selected Coursework</h5>
-            <ul>
-                <li> Math 240: Linear Algebra
-                <li> CIS 380: Operating Systems*
-                <li> CIS 542: Embedded Systems Programming*
-                <li> CIS 240: Introduction to Computer Systems
-                <li> CIS 191: Linux/UNIX skills
-                <li> CIS 371: Computer Organization and Design
-                <li> CIS 121: Data Structures and Algorithms
-                <li> CIS 197: Javascript
-                <li> MEAM 210: Statics and Strength of Materials
-                <li> MEAM 211: Dynamics
-                <li>* in progress Fall 2014
 
-            </ul>
-        </div>
-        <div id="skillsText" class="textBox">
-        <h2> Skills </h2>
-            <ul>
-                <li>Python
-                    <ul>
-                        <li>Flask</li>
-                        <li>Numpy/MatPlotLib</li>
-                    </ul>
-                </li>
-                <li>Java</li>
-                <li>Javascript
-                    <ul>
-                        <li>jQuery </li>
-                        <li>Backbone</li>
-                        <li>NodeJS</li>
-                    </ul>
-                </li>
-                <li>C</li>
-                <li>Git </li>
-                <li>Matlab</li>
-            </ul>
-        </div>
-        <div id="extraCurriculars" class="textBox">
-        <h2> Extra Curriculuars</h2>
-            <ul>
-                <li>CIS 160 Teaching Assistant: Weekly recitations for section of 22, office hours, and grading</li><br>
-                <li>Research assistant in <a href="www.kodlab.seas.upenn.edu">Kodlab</a></li><br>
-                <li>Science and Technology Wing <a href="www.stwing.upenn.edu">(Stwing)</a> 2012-present</li><br>
-                <li>Kings Court English House Special Events Manager</li>
-            </ul>
+                <a href="http://togethrio.herokuapp.com" target="_blank">
+                    <img src="./images/togethrio.png"></img>
+                </a>
+                <p>
+                    <b>Togethr.io</b> Built at PennApps f2013. Really just a learning project. Lightweight communication tool with persistence. Think Omegle meets Google Docs. Currently a playgrand for different apis and file sharing. Stack overview: Flask backend, Mongo database, Tokbox api (not in the current released version, but in the original demo), pure javascript on top.
+                </p>
+            </div>
         </div>
 
-    </script>
-    <script type='text/html' id="projectDiv">
-        <h3>projects</h3>
-        <div id="projects">
-        <a href="http://trackhackfifi.herokuapp.com" target="_blank">
-            <img src="./images/trackhack.png"></img></a>
-            <p>
-            <b>Trackhack:</b> built at HackMIT 2014. In progress. Multi Source playlist, allows you to paste urls from Spotify, Youtube, and Soundcloud, so you can keep it all in one place. Will integrate Facebook and have social access. <br>
-            Stack Overview: Mongo database, database api built with Flask (pymongo), Pure javascript on top. Investigating using other frameworks.<br>
-                Won the MongoDB prize.</p>
-            <a href="http://openn.me" target="_blank">
-            <img src="./images/openn.png"></img></a>
-            <p>
-            <b>Openn:</b> built at PennApps f2014. Released, in active development. Consists of Chrome extension + webapp. Extension makes it easy to scrape grades from Penn Registrar and send to our database. Once grades are sent in, you can view grade distributions for professors and classes. <br>
-                features we hope to build: performance predictions based on student profiles (all students are anonymous), smart duplication detection (we assume it is highly unlikely that students will take the exact same classes, and have the same performance in them. We hope to reduce the amount of students that enter their data twice under the same username)<br><br>
-            </p>
-            <a href="http://penncourseplus.com" target="_blank">
-            <img src="./images/pcp.png"></img></a>
-            <p>
-            <b>PennCoursePlus: </b>Built at PennApps s2014. Released, about 300 users (and growing). Chrome extension that puts PennCourseReview data into PennInTouch. (see screenshot)
-                Received great reviews from other students.<br><br>
-            </p>
+    </div>
 
 
-            <a href="http://togethrio.herokuapp.com" target="_blank">
-            <img src="./images/togethrio.png"></img></a>
-            <p>
-            <b>Togethr.io</b> Built at PennApps f2013. Really just a learning project. Lightweight communication tool with persistence. Think Omegle meets Google Docs. Currently a playgrand for different apis and file sharing.
-                Stack overview: Flask backend, Mongo database, Tokbox api (not in the current released version, but in the original demo), pure javascript on top.
-            </p>
-        </div>
-    </script>
+
+
+
 
 
     <script src="main.js"></script>
