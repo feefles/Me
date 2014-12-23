@@ -85,7 +85,7 @@ li {
 }
 
 
-#projectDiv, #educationDiv {
+#projectDiv, #aboutDiv {
     display:none
 } 
 /*-------------------------*/
@@ -110,12 +110,13 @@ h2 {
 #educationDiv {
    h3 {
     text-align: center;
+    height: 20px;
    } 
    h2 {
     position:relative;
    }
    #classesBar {
-        margin-top: 50px;
+        margin-top: 10px;
         position:relative;
         display:inline-block;
         background-color: black;
@@ -172,8 +173,8 @@ h2 {
             margin: 25px;
             // background-size: 50px 50px;
             background-position: center center;
-            &:hover {
-                cursor:pointer;
+            span {
+                position:relative;
             }
         }
    }
@@ -182,7 +183,6 @@ h2 {
         position:relative;
         width: 80%;
         height: 200px;
-        left:5%;
         top: 100px;
         margin-left: -330px;
         div {
@@ -193,6 +193,38 @@ h2 {
             margin:40px;
             background-position:center center;
 
+        }
+   }
+
+   #extrasBar {
+        margin-top: 10px;
+        position:relative;
+        display:inline-block;
+        background-color: $grey;
+        height:200px;
+        width: 100%;
+        #extrasInner {
+            position:relative;
+            width: 600px;
+            left: 50%;
+            margin-left: -300px;
+
+            span {
+                vertical-align: top;
+                float:left;
+                text-align:center;
+                b {
+                    font-size: 16px;
+                }
+                -webkit-transition:all .2s ease-in-out;
+                color:white;
+                font-size: 12px;
+                display: inline-block;
+                width: 100px;
+                height: 80px;
+                padding: 10px;
+                cursor:default;
+            } 
         }
    }
 }

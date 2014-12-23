@@ -61,7 +61,7 @@ li {
   padding: 10px;
   margin: auto; }
 
-#projectDiv, #educationDiv {
+#projectDiv, #aboutDiv {
   display: none; }
 
 /*-------------------------*/
@@ -82,11 +82,12 @@ h2 {
 
 /*-------------------------*/
 #educationDiv h3 {
-  text-align: center; }
+  text-align: center;
+  height: 20px; }
 #educationDiv h2 {
   position: relative; }
 #educationDiv #classesBar {
-  margin-top: 50px;
+  margin-top: 10px;
   position: relative;
   display: inline-block;
   background-color: black;
@@ -133,14 +134,13 @@ h2 {
     height: 60px;
     margin: 25px;
     background-position: center center; }
-    #educationDiv #skillsBar div:hover {
-      cursor: pointer; }
+    #educationDiv #skillsBar div span {
+      position: relative; }
 #educationDiv #skillsBar2 {
   display: inline-block;
   position: relative;
   width: 80%;
   height: 200px;
-  left: 5%;
   top: 100px;
   margin-left: -330px; }
   #educationDiv #skillsBar2 div {
@@ -150,6 +150,32 @@ h2 {
     height: 50px;
     margin: 40px;
     background-position: center center; }
+#educationDiv #extrasBar {
+  margin-top: 10px;
+  position: relative;
+  display: inline-block;
+  background-color: #3B4848;
+  height: 200px;
+  width: 100%; }
+  #educationDiv #extrasBar #extrasInner {
+    position: relative;
+    width: 600px;
+    left: 50%;
+    margin-left: -300px; }
+    #educationDiv #extrasBar #extrasInner span {
+      vertical-align: top;
+      float: left;
+      text-align: center;
+      -webkit-transition: all .2s ease-in-out;
+      color: white;
+      font-size: 12px;
+      display: inline-block;
+      width: 100px;
+      height: 80px;
+      padding: 10px;
+      cursor: default; }
+      #educationDiv #extrasBar #extrasInner span b {
+        font-size: 16px; }
 
 /*-------------------------*/
 #projects {

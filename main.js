@@ -2,19 +2,19 @@ $(function() {
     // $('#content').html($('#aboutDiv').html());
     $('#about').click(function() {
     	if ($('#aboutDiv').css('display') == "none") {
-    		$('#content').children().fadeOut();
+    		$('#content').children().fadeOut(0);
     		$('#aboutDiv').fadeIn();
     	}
     })
     $('#education').click(function() {
     	if ($('#educationDiv').css('display') == "none") {
-	    	$('#content').children().fadeOut();
+	    	$('#content').children().fadeOut(0);
 	    	$('#educationDiv').fadeIn();
 	    }
     })
     $('#projects').click(function() {
 		if ($('#projectDiv').css('display') == "none") {
-	    	$('#content').children().fadeOut();
+	    	$('#content').children().fadeOut(0);
 	    	$('#projectDiv').fadeIn();
 	    }    })
 
@@ -27,6 +27,15 @@ $(function() {
     	$(this).find('span').css('display', 'inline-block');
 
     })
+
+    $('#skillsBar div, #skillsBar2 div').hover(function() {
+        $('#skill').text($(this).attr('disp'));
+        $('#skill').animate({'opacity':1, 'queue': false}, {
+            'duration':100});
+
+    }, function() {
+        $('#skill').animate({'opacity':0}, {'duration':100, 'queue': false});
+    });
 
 
     $('#navigation i').hover(function() {
