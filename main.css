@@ -61,7 +61,7 @@ li {
   padding: 10px;
   margin: auto; }
 
-#educationDiv, #projectDiv {
+#projectDiv, #aboutDiv {
   display: none; }
 
 /*-------------------------*/
@@ -102,7 +102,7 @@ h2 {
       -webkit-transition: all .2s ease-in-out;
       background-color: black;
       color: white;
-      font-size: 10px;
+      font-size: 12px;
       display: inline-block;
       width: 100px;
       height: 80px;
@@ -119,17 +119,37 @@ h2 {
 #educationDiv #skillsBar {
   display: inline-block;
   position: relative;
-  width: 600px;
-  height: 200px;
-  top: 300px;
-  margin-left: -200px;
+  width: 800px;
+  height: 100px;
+  left: 50%;
+  margin-left: -330px;
   /* half of the width  */
   margin-top: -100px;
   /* half of the height */ }
-  #educationDiv #skillsBar img {
+  #educationDiv #skillsBar div {
+    display: inline-block;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    margin: 25px;
+    background-position: center center; }
+    #educationDiv #skillsBar div:hover {
+      cursor: pointer; }
+#educationDiv #skillsBar2 {
+  display: inline-block;
+  position: relative;
+  width: 80%;
+  height: 200px;
+  left: 5%;
+  top: 100px;
+  margin-left: -330px; }
+  #educationDiv #skillsBar2 div {
+    display: inline-block;
+    background-repeat: no-repeat;
     width: 50px;
     height: 50px;
-    margin: 25px; }
+    margin: 40px;
+    background-position: center center; }
 
 /*-------------------------*/
 #projects {

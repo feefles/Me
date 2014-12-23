@@ -1,19 +1,16 @@
 $(function() {
     // $('#content').html($('#aboutDiv').html());
-
     $('#about').click(function() {
     	if ($('#aboutDiv').css('display') == "none") {
     		$('#content').children().fadeOut();
     		$('#aboutDiv').fadeIn();
     	}
-   
-        // $('#content').fadeOut(0).html($('#aboutDiv').html()).fadeIn(200);
     })
     $('#education').click(function() {
-    	// if ($('#educationDiv').css('display') == "none") {
+    	if ($('#educationDiv').css('display') == "none") {
 	    	$('#content').children().fadeOut();
 	    	$('#educationDiv').fadeIn();
-	    // }
+	    }
     })
     $('#projects').click(function() {
 		if ($('#projectDiv').css('display') == "none") {
@@ -39,4 +36,7 @@ $(function() {
         $(this).find('span').css('display', 'none');
 
     })
+
+    var s = skrollr.init();
+
 });
