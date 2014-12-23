@@ -1,5 +1,9 @@
 $(function() {
     // $('#content').html($('#aboutDiv').html());
+    $('#about').addClass('selected');
+    $('#about').find('span').css('display', 'inline-block');
+
+
     $('#about').click(function() {
     	if ($('#aboutDiv').css('display') == "none") {
     		$('#content').children().fadeOut(0);
